@@ -1,0 +1,1 @@
+{"articles/Empresa.md":[{"File":"articles/Empresa.md","Line":"7","LogLevel":"warning","Message":"Invalid file link:(~/articles/cap.jpg).","Phase":"BuildCommand.BuildCore.Build Document.LinkPhaseHandlerWithIncremental.ConceptualDocumentProcessor.Save","Code":"InvalidFileLink"}]}

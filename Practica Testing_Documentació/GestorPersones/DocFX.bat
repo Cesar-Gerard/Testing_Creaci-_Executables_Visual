@@ -1,0 +1,1 @@
+C:\Users\gerar\.nuget\packages\docfx.console\2.59.4\tools\docfx.exe --serve

@@ -1,0 +1,40 @@
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.AssemblyReference.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.SuggestedBindingRedirects.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\MainWindow.g.cs
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\App.g.cs
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones_MarkupCompile.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones_MarkupCompile.lref
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.exe.config
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.exe
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\MainWindow.baml
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.g.resources
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.Properties.Resources.resources
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.GenerateResource.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.CoreCompileInputs.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.exe
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.xml
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\bin\Debug\PlantUml.Net.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.CopyComplete
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\GestorPersones\bin\Debug\Markdown.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.xml
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.AssemblyReference.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.SuggestedBindingRedirects.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\MainWindow.g.cs
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\App.g.cs
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones_MarkupCompile.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones_MarkupCompile.lref
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\MainWindow.baml
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.g.resources
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.exe.config
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.exe
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\bin\Debug\GestorPersones.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\bin\Debug\Markdown.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\bin\Debug\PlantUml.Net.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.Properties.Resources.resources
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.GenerateResource.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.CoreCompileInputs.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.csproj.CopyComplete
+D:\DAM\DAM2\Interficies\Practica Testing_Documentacio\Practica Testing_Documentació\GestorPersones\obj\Debug\GestorPersones.exe

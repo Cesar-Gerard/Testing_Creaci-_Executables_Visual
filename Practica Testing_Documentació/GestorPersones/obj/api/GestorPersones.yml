@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: GestorPersones
+  commentId: N:GestorPersones
+  id: GestorPersones
+  children:
+  - GestorPersones.App
+  - GestorPersones.Empleat
+  - GestorPersones.Empresa
+  - GestorPersones.MainWindow
+  - GestorPersones.Projecte
+  langs:
+  - csharp
+  - vb
+  name: GestorPersones
+  nameWithType: GestorPersones
+  fullName: GestorPersones
+  type: Namespace
+  assemblies:
+  - GestorPersones
+references:
+- uid: GestorPersones.App
+  commentId: T:GestorPersones.App
+  name: App
+  nameWithType: App
+  fullName: GestorPersones.App
+- uid: GestorPersones.Empleat
+  commentId: T:GestorPersones.Empleat
+  parent: GestorPersones
+  name: Empleat
+  nameWithType: Empleat
+  fullName: GestorPersones.Empleat
+- uid: GestorPersones.Empresa
+  commentId: T:GestorPersones.Empresa
+  parent: GestorPersones
+  name: Empresa
+  nameWithType: Empresa
+  fullName: GestorPersones.Empresa
+- uid: GestorPersones.MainWindow
+  commentId: T:GestorPersones.MainWindow
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: GestorPersones.MainWindow
+- uid: GestorPersones.Projecte
+  commentId: T:GestorPersones.Projecte
+  parent: GestorPersones
+  name: Projecte
+  nameWithType: Projecte
+  fullName: GestorPersones.Projecte
+- uid: GestorPersones
+  commentId: N:GestorPersones
+  name: GestorPersones
+  nameWithType: GestorPersones
+  fullName: GestorPersones

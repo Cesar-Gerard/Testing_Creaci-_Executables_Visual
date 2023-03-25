@@ -1,0 +1,16 @@
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\Castle.Core.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\GestorPersones.exe
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\TestStack.White.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\GestorPersones.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\GestorPersones.exe.config
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\Castle.Core.xml
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\TestStack.White.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\TestStack.White.xml
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\obj\Debug\UnitTestProject.pdb
+D:\DAM\DAM2\Interficies\Practica Testing_Documentació\UnitTestProject\bin\Debug\GestorPersones.xml

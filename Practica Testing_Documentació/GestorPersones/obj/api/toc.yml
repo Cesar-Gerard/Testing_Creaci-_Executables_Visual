@@ -1,0 +1,14 @@
+### YamlMime:TableOfContent
+- uid: GestorPersones
+  name: GestorPersones
+  items:
+  - uid: GestorPersones.App
+    name: App
+  - uid: GestorPersones.Empleat
+    name: Empleat
+  - uid: GestorPersones.Empresa
+    name: Empresa
+  - uid: GestorPersones.MainWindow
+    name: MainWindow
+  - uid: GestorPersones.Projecte
+    name: Projecte

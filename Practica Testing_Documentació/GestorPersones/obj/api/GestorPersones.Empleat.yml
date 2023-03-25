@@ -1,0 +1,1276 @@
+### YamlMime:ManagedReference
+items:
+- uid: GestorPersones.Empleat
+  commentId: T:GestorPersones.Empleat
+  id: Empleat
+  parent: GestorPersones
+  children:
+  - GestorPersones.Empleat.#ctor(GestorPersones.Empresa,System.String,System.String,System.String,System.DateTime)
+  - GestorPersones.Empleat.AddProjecte(GestorPersones.Projecte)
+  - GestorPersones.Empleat.Cognoms
+  - GestorPersones.Empleat.comporvarData(System.DateTime)
+  - GestorPersones.Empleat.comprovarCognom(System.String)
+  - GestorPersones.Empleat.comprovarNIF(System.String)
+  - GestorPersones.Empleat.comprovarNom(System.String)
+  - GestorPersones.Empleat.DataIncorporacio
+  - GestorPersones.Empleat.EmpresaActual
+  - GestorPersones.Empleat.Equals(System.Object)
+  - GestorPersones.Empleat.GetEmpleats
+  - GestorPersones.Empleat.GetProjectes
+  - GestorPersones.Empleat.NIF
+  - GestorPersones.Empleat.Nom
+  - GestorPersones.Empleat.ProjectesOnNoTreballo
+  - GestorPersones.Empleat.ProjectesOnTreballo
+  - GestorPersones.Empleat.RemoveProjecte(GestorPersones.Projecte)
+  langs:
+  - csharp
+  - vb
+  name: Empleat
+  nameWithType: Empleat
+  fullName: GestorPersones.Empleat
+  type: Class
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: Empleat
+    path: Empleat.cs
+    startLine: 8
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public class Empleat
+    content.vb: Public Class Empleat
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: GestorPersones.Empleat.GetEmpleats
+  commentId: M:GestorPersones.Empleat.GetEmpleats
+  id: GetEmpleats
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: GetEmpleats()
+  nameWithType: Empleat.GetEmpleats()
+  fullName: GestorPersones.Empleat.GetEmpleats()
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: GetEmpleats
+    path: Empleat.cs
+    startLine: 12
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static List<Empleat> GetEmpleats()
+    return:
+      type: System.Collections.Generic.List{GestorPersones.Empleat}
+    content.vb: Public Shared Function GetEmpleats As List(Of Empleat)
+  overload: GestorPersones.Empleat.GetEmpleats*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GestorPersones.Empleat.#ctor(GestorPersones.Empresa,System.String,System.String,System.String,System.DateTime)
+  commentId: M:GestorPersones.Empleat.#ctor(GestorPersones.Empresa,System.String,System.String,System.String,System.DateTime)
+  id: '#ctor(GestorPersones.Empresa,System.String,System.String,System.String,System.DateTime)'
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: Empleat(Empresa, String, String, String, DateTime)
+  nameWithType: Empleat.Empleat(Empresa, String, String, String, DateTime)
+  fullName: GestorPersones.Empleat.Empleat(GestorPersones.Empresa, System.String, System.String, System.String, System.DateTime)
+  type: Constructor
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: .ctor
+    path: Empleat.cs
+    startLine: 34
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public Empleat(Empresa pEmpresa, string pNom, string pCognoms, string pNIF, DateTime pDataIncorporacio)
+    parameters:
+    - id: pEmpresa
+      type: GestorPersones.Empresa
+    - id: pNom
+      type: System.String
+    - id: pCognoms
+      type: System.String
+    - id: pNIF
+      type: System.String
+    - id: pDataIncorporacio
+      type: System.DateTime
+    content.vb: Public Sub New(pEmpresa As Empresa, pNom As String, pCognoms As String, pNIF As String, pDataIncorporacio As Date)
+  overload: GestorPersones.Empleat.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.comprovarCognom(System.String)
+  commentId: M:GestorPersones.Empleat.comprovarCognom(System.String)
+  id: comprovarCognom(System.String)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: comprovarCognom(String)
+  nameWithType: Empleat.comprovarCognom(String)
+  fullName: GestorPersones.Empleat.comprovarCognom(System.String)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: comprovarCognom
+    path: Empleat.cs
+    startLine: 48
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static string comprovarCognom(string pCognoms)
+    parameters:
+    - id: pCognoms
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function comprovarCognom(pCognoms As String) As String
+  overload: GestorPersones.Empleat.comprovarCognom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GestorPersones.Empleat.comprovarNom(System.String)
+  commentId: M:GestorPersones.Empleat.comprovarNom(System.String)
+  id: comprovarNom(System.String)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: comprovarNom(String)
+  nameWithType: Empleat.comprovarNom(String)
+  fullName: GestorPersones.Empleat.comprovarNom(System.String)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: comprovarNom
+    path: Empleat.cs
+    startLine: 63
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static string comprovarNom(string pNom)
+    parameters:
+    - id: pNom
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function comprovarNom(pNom As String) As String
+  overload: GestorPersones.Empleat.comprovarNom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GestorPersones.Empleat.comporvarData(System.DateTime)
+  commentId: M:GestorPersones.Empleat.comporvarData(System.DateTime)
+  id: comporvarData(System.DateTime)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: comporvarData(DateTime)
+  nameWithType: Empleat.comporvarData(DateTime)
+  fullName: GestorPersones.Empleat.comporvarData(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: comporvarData
+    path: Empleat.cs
+    startLine: 80
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static DateTime comporvarData(DateTime pDataIncorporacio)
+    parameters:
+    - id: pDataIncorporacio
+      type: System.DateTime
+    return:
+      type: System.DateTime
+    content.vb: Public Shared Function comporvarData(pDataIncorporacio As Date) As Date
+  overload: GestorPersones.Empleat.comporvarData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GestorPersones.Empleat.comprovarNIF(System.String)
+  commentId: M:GestorPersones.Empleat.comprovarNIF(System.String)
+  id: comprovarNIF(System.String)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: comprovarNIF(String)
+  nameWithType: Empleat.comprovarNIF(String)
+  fullName: GestorPersones.Empleat.comprovarNIF(System.String)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: comprovarNIF
+    path: Empleat.cs
+    startLine: 95
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static string comprovarNIF(string pNIF)
+    parameters:
+    - id: pNIF
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function comprovarNIF(pNIF As String) As String
+  overload: GestorPersones.Empleat.comprovarNIF*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GestorPersones.Empleat.Nom
+  commentId: P:GestorPersones.Empleat.Nom
+  id: Nom
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: Nom
+  nameWithType: Empleat.Nom
+  fullName: GestorPersones.Empleat.Nom
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: Nom
+    path: Empleat.cs
+    startLine: 121
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public string Nom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nom As String
+  overload: GestorPersones.Empleat.Nom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.Cognoms
+  commentId: P:GestorPersones.Empleat.Cognoms
+  id: Cognoms
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: Cognoms
+  nameWithType: Empleat.Cognoms
+  fullName: GestorPersones.Empleat.Cognoms
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: Cognoms
+    path: Empleat.cs
+    startLine: 129
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public string Cognoms { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Cognoms As String
+  overload: GestorPersones.Empleat.Cognoms*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.NIF
+  commentId: P:GestorPersones.Empleat.NIF
+  id: NIF
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: NIF
+  nameWithType: Empleat.NIF
+  fullName: GestorPersones.Empleat.NIF
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: NIF
+    path: Empleat.cs
+    startLine: 137
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public string NIF { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NIF As String
+  overload: GestorPersones.Empleat.NIF*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.ProjectesOnTreballo
+  commentId: P:GestorPersones.Empleat.ProjectesOnTreballo
+  id: ProjectesOnTreballo
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: ProjectesOnTreballo
+  nameWithType: Empleat.ProjectesOnTreballo
+  fullName: GestorPersones.Empleat.ProjectesOnTreballo
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: ProjectesOnTreballo
+    path: Empleat.cs
+    startLine: 145
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public List<Projecte> ProjectesOnTreballo { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{GestorPersones.Projecte}
+    content.vb: Public ReadOnly Property ProjectesOnTreballo As List(Of Projecte)
+  overload: GestorPersones.Empleat.ProjectesOnTreballo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: GestorPersones.Empleat.ProjectesOnNoTreballo
+  commentId: P:GestorPersones.Empleat.ProjectesOnNoTreballo
+  id: ProjectesOnNoTreballo
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: ProjectesOnNoTreballo
+  nameWithType: Empleat.ProjectesOnNoTreballo
+  fullName: GestorPersones.Empleat.ProjectesOnNoTreballo
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: ProjectesOnNoTreballo
+    path: Empleat.cs
+    startLine: 150
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public List<Projecte> ProjectesOnNoTreballo { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{GestorPersones.Projecte}
+    content.vb: Public ReadOnly Property ProjectesOnNoTreballo As List(Of Projecte)
+  overload: GestorPersones.Empleat.ProjectesOnNoTreballo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: GestorPersones.Empleat.GetProjectes
+  commentId: M:GestorPersones.Empleat.GetProjectes
+  id: GetProjectes
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: GetProjectes()
+  nameWithType: Empleat.GetProjectes()
+  fullName: GestorPersones.Empleat.GetProjectes()
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: GetProjectes
+    path: Empleat.cs
+    startLine: 162
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public List<Projecte>.Enumerator GetProjectes()
+    return:
+      type: System.Collections.Generic.List{GestorPersones.Projecte}.Enumerator
+    content.vb: Public Function GetProjectes As List(Of Projecte).Enumerator
+  overload: GestorPersones.Empleat.GetProjectes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.AddProjecte(GestorPersones.Projecte)
+  commentId: M:GestorPersones.Empleat.AddProjecte(GestorPersones.Projecte)
+  id: AddProjecte(GestorPersones.Projecte)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: AddProjecte(Projecte)
+  nameWithType: Empleat.AddProjecte(Projecte)
+  fullName: GestorPersones.Empleat.AddProjecte(GestorPersones.Projecte)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: AddProjecte
+    path: Empleat.cs
+    startLine: 167
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public void AddProjecte(Projecte p)
+    parameters:
+    - id: p
+      type: GestorPersones.Projecte
+    content.vb: Public Sub AddProjecte(p As Projecte)
+  overload: GestorPersones.Empleat.AddProjecte*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.RemoveProjecte(GestorPersones.Projecte)
+  commentId: M:GestorPersones.Empleat.RemoveProjecte(GestorPersones.Projecte)
+  id: RemoveProjecte(GestorPersones.Projecte)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: RemoveProjecte(Projecte)
+  nameWithType: Empleat.RemoveProjecte(Projecte)
+  fullName: GestorPersones.Empleat.RemoveProjecte(GestorPersones.Projecte)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: RemoveProjecte
+    path: Empleat.cs
+    startLine: 175
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public void RemoveProjecte(Projecte p)
+    parameters:
+    - id: p
+      type: GestorPersones.Projecte
+    content.vb: Public Sub RemoveProjecte(p As Projecte)
+  overload: GestorPersones.Empleat.RemoveProjecte*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.DataIncorporacio
+  commentId: P:GestorPersones.Empleat.DataIncorporacio
+  id: DataIncorporacio
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: DataIncorporacio
+  nameWithType: Empleat.DataIncorporacio
+  fullName: GestorPersones.Empleat.DataIncorporacio
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: DataIncorporacio
+    path: Empleat.cs
+    startLine: 186
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public DateTime DataIncorporacio { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DataIncorporacio As Date
+  overload: GestorPersones.Empleat.DataIncorporacio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.EmpresaActual
+  commentId: P:GestorPersones.Empleat.EmpresaActual
+  id: EmpresaActual
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: EmpresaActual
+  nameWithType: Empleat.EmpresaActual
+  fullName: GestorPersones.Empleat.EmpresaActual
+  type: Property
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: EmpresaActual
+    path: Empleat.cs
+    startLine: 192
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public Empresa EmpresaActual { get; set; }
+    parameters: []
+    return:
+      type: GestorPersones.Empresa
+    content.vb: Public Property EmpresaActual As Empresa
+  overload: GestorPersones.Empleat.EmpresaActual*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: GestorPersones.Empleat.Equals(System.Object)
+  commentId: M:GestorPersones.Empleat.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Empleat.Equals(Object)
+  fullName: GestorPersones.Empleat.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: Equals
+    path: Empleat.cs
+    startLine: 198
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public override bool Equals(object o)
+    parameters:
+    - id: o
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: GestorPersones.Empleat.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: GestorPersones
+  commentId: N:GestorPersones
+  name: GestorPersones
+  nameWithType: GestorPersones
+  fullName: GestorPersones
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GestorPersones.Empleat.GetEmpleats*
+  commentId: Overload:GestorPersones.Empleat.GetEmpleats
+  name: GetEmpleats
+  nameWithType: Empleat.GetEmpleats
+  fullName: GestorPersones.Empleat.GetEmpleats
+- uid: System.Collections.Generic.List{GestorPersones.Empleat}
+  commentId: T:System.Collections.Generic.List{GestorPersones.Empleat}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Empleat>
+  nameWithType: List<Empleat>
+  fullName: System.Collections.Generic.List<GestorPersones.Empleat>
+  nameWithType.vb: List(Of Empleat)
+  fullName.vb: System.Collections.Generic.List(Of GestorPersones.Empleat)
+  name.vb: List(Of Empleat)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GestorPersones.Empleat
+    name: Empleat
+    nameWithType: Empleat
+    fullName: GestorPersones.Empleat
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GestorPersones.Empleat
+    name: Empleat
+    nameWithType: Empleat
+    fullName: GestorPersones.Empleat
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: GestorPersones.Empleat.#ctor*
+  commentId: Overload:GestorPersones.Empleat.#ctor
+  name: Empleat
+  nameWithType: Empleat.Empleat
+  fullName: GestorPersones.Empleat.Empleat
+- uid: GestorPersones.Empresa
+  commentId: T:GestorPersones.Empresa
+  parent: GestorPersones
+  name: Empresa
+  nameWithType: Empresa
+  fullName: GestorPersones.Empresa
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: GestorPersones.Empleat.comprovarCognom*
+  commentId: Overload:GestorPersones.Empleat.comprovarCognom
+  name: comprovarCognom
+  nameWithType: Empleat.comprovarCognom
+  fullName: GestorPersones.Empleat.comprovarCognom
+- uid: GestorPersones.Empleat.comprovarNom*
+  commentId: Overload:GestorPersones.Empleat.comprovarNom
+  name: comprovarNom
+  nameWithType: Empleat.comprovarNom
+  fullName: GestorPersones.Empleat.comprovarNom
+- uid: GestorPersones.Empleat.comporvarData*
+  commentId: Overload:GestorPersones.Empleat.comporvarData
+  name: comporvarData
+  nameWithType: Empleat.comporvarData
+  fullName: GestorPersones.Empleat.comporvarData
+- uid: GestorPersones.Empleat.comprovarNIF*
+  commentId: Overload:GestorPersones.Empleat.comprovarNIF
+  name: comprovarNIF
+  nameWithType: Empleat.comprovarNIF
+  fullName: GestorPersones.Empleat.comprovarNIF
+- uid: GestorPersones.Empleat.Nom*
+  commentId: Overload:GestorPersones.Empleat.Nom
+  name: Nom
+  nameWithType: Empleat.Nom
+  fullName: GestorPersones.Empleat.Nom
+- uid: GestorPersones.Empleat.Cognoms*
+  commentId: Overload:GestorPersones.Empleat.Cognoms
+  name: Cognoms
+  nameWithType: Empleat.Cognoms
+  fullName: GestorPersones.Empleat.Cognoms
+- uid: GestorPersones.Empleat.NIF*
+  commentId: Overload:GestorPersones.Empleat.NIF
+  name: NIF
+  nameWithType: Empleat.NIF
+  fullName: GestorPersones.Empleat.NIF
+- uid: GestorPersones.Empleat.ProjectesOnTreballo*
+  commentId: Overload:GestorPersones.Empleat.ProjectesOnTreballo
+  name: ProjectesOnTreballo
+  nameWithType: Empleat.ProjectesOnTreballo
+  fullName: GestorPersones.Empleat.ProjectesOnTreballo
+- uid: System.Collections.Generic.List{GestorPersones.Projecte}
+  commentId: T:System.Collections.Generic.List{GestorPersones.Projecte}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Projecte>
+  nameWithType: List<Projecte>
+  fullName: System.Collections.Generic.List<GestorPersones.Projecte>
+  nameWithType.vb: List(Of Projecte)
+  fullName.vb: System.Collections.Generic.List(Of GestorPersones.Projecte)
+  name.vb: List(Of Projecte)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GestorPersones.Projecte
+    name: Projecte
+    nameWithType: Projecte
+    fullName: GestorPersones.Projecte
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GestorPersones.Projecte
+    name: Projecte
+    nameWithType: Projecte
+    fullName: GestorPersones.Projecte
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GestorPersones.Empleat.ProjectesOnNoTreballo*
+  commentId: Overload:GestorPersones.Empleat.ProjectesOnNoTreballo
+  name: ProjectesOnNoTreballo
+  nameWithType: Empleat.ProjectesOnNoTreballo
+  fullName: GestorPersones.Empleat.ProjectesOnNoTreballo
+- uid: GestorPersones.Empleat.GetProjectes*
+  commentId: Overload:GestorPersones.Empleat.GetProjectes
+  name: GetProjectes
+  nameWithType: Empleat.GetProjectes
+  fullName: GestorPersones.Empleat.GetProjectes
+- uid: System.Collections.Generic.List{GestorPersones.Projecte}.Enumerator
+  commentId: T:System.Collections.Generic.List{GestorPersones.Projecte}.Enumerator
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1.Enumerator
+  name: List.Enumerator<>
+  nameWithType: List.Enumerator<>
+  fullName: System.Collections.Generic.List.Enumerator<>
+  nameWithType.vb: List.Enumerator(Of )
+  fullName.vb: System.Collections.Generic.List.Enumerator(Of )
+  name.vb: List.Enumerator(Of )
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    nameWithType: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    nameWithType: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1.Enumerator
+  commentId: T:System.Collections.Generic.List`1.Enumerator
+  isExternal: true
+  name: List.Enumerator<>
+  nameWithType: List.Enumerator<>
+  fullName: System.Collections.Generic.List.Enumerator<>
+  nameWithType.vb: List.Enumerator(Of )
+  fullName.vb: System.Collections.Generic.List.Enumerator(Of )
+  name.vb: List.Enumerator(Of )
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    nameWithType: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    nameWithType: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GestorPersones.Empleat.AddProjecte*
+  commentId: Overload:GestorPersones.Empleat.AddProjecte
+  name: AddProjecte
+  nameWithType: Empleat.AddProjecte
+  fullName: GestorPersones.Empleat.AddProjecte
+- uid: GestorPersones.Projecte
+  commentId: T:GestorPersones.Projecte
+  parent: GestorPersones
+  name: Projecte
+  nameWithType: Projecte
+  fullName: GestorPersones.Projecte
+- uid: GestorPersones.Empleat.RemoveProjecte*
+  commentId: Overload:GestorPersones.Empleat.RemoveProjecte
+  name: RemoveProjecte
+  nameWithType: Empleat.RemoveProjecte
+  fullName: GestorPersones.Empleat.RemoveProjecte
+- uid: GestorPersones.Empleat.DataIncorporacio*
+  commentId: Overload:GestorPersones.Empleat.DataIncorporacio
+  name: DataIncorporacio
+  nameWithType: Empleat.DataIncorporacio
+  fullName: GestorPersones.Empleat.DataIncorporacio
+- uid: GestorPersones.Empleat.EmpresaActual*
+  commentId: Overload:GestorPersones.Empleat.EmpresaActual
+  name: EmpresaActual
+  nameWithType: Empleat.EmpresaActual
+  fullName: GestorPersones.Empleat.EmpresaActual
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GestorPersones.Empleat.Equals*
+  commentId: Overload:GestorPersones.Empleat.Equals
+  name: Equals
+  nameWithType: Empleat.Equals
+  fullName: GestorPersones.Empleat.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
