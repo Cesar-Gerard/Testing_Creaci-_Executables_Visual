@@ -32,6 +32,12 @@ references:
   isSpec: "True"
   fullName: GestorPersones.Empleat.Empleat
   nameWithType: Empleat.Empleat
+- uid: GestorPersones.Empleat._empleats
+  name: _empleats
+  href: api/GestorPersones.Empleat.html#GestorPersones_Empleat__empleats
+  commentId: F:GestorPersones.Empleat._empleats
+  fullName: GestorPersones.Empleat._empleats
+  nameWithType: Empleat._empleats
 - uid: GestorPersones.Empleat.AddProjecte(GestorPersones.Projecte)
   name: AddProjecte(Projecte)
   href: api/GestorPersones.Empleat.html#GestorPersones_Empleat_AddProjecte_GestorPersones_Projecte_
@@ -227,6 +233,19 @@ references:
   isSpec: "True"
   fullName: GestorPersones.Empleat.ProjectesOnTreballo
   nameWithType: Empleat.ProjectesOnTreballo
+- uid: GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
+  name: RemoveEmpleat(Empleat)
+  href: api/GestorPersones.Empleat.html#GestorPersones_Empleat_RemoveEmpleat_GestorPersones_Empleat_
+  commentId: M:GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
+  fullName: GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
+  nameWithType: Empleat.RemoveEmpleat(Empleat)
+- uid: GestorPersones.Empleat.RemoveEmpleat*
+  name: RemoveEmpleat
+  href: api/GestorPersones.Empleat.html#GestorPersones_Empleat_RemoveEmpleat_
+  commentId: Overload:GestorPersones.Empleat.RemoveEmpleat
+  isSpec: "True"
+  fullName: GestorPersones.Empleat.RemoveEmpleat
+  nameWithType: Empleat.RemoveEmpleat
 - uid: GestorPersones.Empleat.RemoveProjecte(GestorPersones.Projecte)
   name: RemoveProjecte(Projecte)
   href: api/GestorPersones.Empleat.html#GestorPersones_Empleat_RemoveProjecte_GestorPersones_Projecte_

@@ -22,6 +22,9 @@ namespace GestorPersones
                 _projectes.Add(new Projecte(1, "A"));
                 _projectes.Add(new Projecte(2, "B"));
                 _projectes.Add(new Projecte(3, "C"));
+
+
+                
             }
             return _projectes;
         }
@@ -50,7 +53,7 @@ namespace GestorPersones
         }
 
 
-        private List<Empleat> mEmpleats;
+        private List<Empleat> mEmpleats = new List<Empleat>();
         public void AddEmpleat(Empleat nou)
         {
             if (!mEmpleats.Contains(nou))
@@ -59,6 +62,8 @@ namespace GestorPersones
                 nou.AddProjecte(this);
             }            
         }
+
+
 
         public void RemoveEmpleat(Empleat e)
         {

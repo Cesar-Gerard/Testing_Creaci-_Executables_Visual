@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Collections.ObjectModel;
 
 namespace GestorPersones
 {
@@ -8,19 +8,19 @@ namespace GestorPersones
     
     public class Empleat
     {
-        private static List<Empleat> _empleats;
+        public static ObservableCollection<Empleat> _empleats;
 
-        public static List<Empleat> GetEmpleats()
+        public static ObservableCollection<Empleat> GetEmpleats()
         {
             if (_empleats == null) {
-                _empleats = new List<Empleat>();
+                _empleats = new ObservableCollection<Empleat>();
                 Empresa empresa = new Empresa("IES Milà");
-                DateTime hora = DateTime.Now;
+                DateTime hora = System.DateTime.Now;
 
                 _empleats.Add(new Empleat(empresa, "Paco", "Jones", "11111111H", hora));
                 _empleats.Add(new Empleat(empresa, "Ester", "Minator", "22222222J", hora));
-                _empleats.Add(new Empleat(empresa, "Toni", "Casue", "33333333H", hora));
-                _empleats.Add(new Empleat(empresa, "Ester", "Colero", "44444444H", hora));
+                _empleats.Add(new Empleat(empresa, "Toni", "Casue", "47130477G", hora));
+                _empleats.Add(new Empleat(empresa, "Ester", "Colero", "47130476A", hora));
 
                 _empleats[0].AddProjecte(Projecte.GetProjectes()[0]);
                 _empleats[0].AddProjecte(Projecte.GetProjectes()[1]);
@@ -35,10 +35,19 @@ namespace GestorPersones
         public Empleat(Empresa pEmpresa, String pNom, String pCognoms, String pNIF, DateTime pDataIncorporacio)
         {
             EmpresaActual = pEmpresa;
-            Nom = comprovarNom(pNom);
-            Cognoms = comprovarCognom(pCognoms);
-            NIF = comprovarNIF(pNIF);
-            DataIncorporacio = comporvarData(pDataIncorporacio);
+
+            
+                Nom = pNom;
+            
+                Cognoms = pCognoms;
+            
+           
+                NIF = pNIF;
+
+                DataIncorporacio = pDataIncorporacio;
+            
+
+            
             mProjectesOnTreballo = new List<Projecte>();
 
             
@@ -46,73 +55,134 @@ namespace GestorPersones
 
         }
 
-        public static string comprovarCognom(string pCognoms)
+        public static bool  comprovarCognom(string pCognoms)
         {
-            String comprovar = pCognoms.Replace(" ", "");
+            
 
-            if (comprovar.Length >= 4)
+            if (pCognoms == null)
             {
-                return pCognoms;
+                return false;
             }
             else
             {
-                pCognoms = "César Morral";
-                return pCognoms;
+                String comprovar = pCognoms.Replace(" ", "");
+
+                if (comprovar.Length >= 4)
+                {
+                    return true;
+                }
+                else
+                {
+
+                    return false;
+                }
             }
         }
 
-        public static string comprovarNom(string pNom)
+        public static bool  comprovarNom(string pNom)
         {
-            String comprovar = pNom.Replace(" ","");
+            
 
-            if (comprovar.Length >= 4)
+            if (pNom == null)
             {
-                return pNom;
+                return false;
             }
             else
             {
-                pNom = "Gerard";
+                String comprovar = pNom.Replace(" ", "");
 
-                return pNom;
+                if (comprovar.Length >= 4)
+                {
+                    return true;
+                }
+                else
+                {
+
+
+                    return false;
+                }
             }
 
         }
 
-        public static DateTime comporvarData(DateTime pDataIncorporacio)
+        public static bool comporvarData(DateTime pDataIncorporacio)
         {
-            if(pDataIncorporacio > System.DateTime.Now)
+
+            if (pDataIncorporacio == null)
             {
-                return pDataIncorporacio;
+                return false;
             }
             else
             {
-                return System.DateTime.Now;
-            }
-               
+
+                if (pDataIncorporacio > System.DateTime.Now)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }  
                
             
         }
 
-        public static string comprovarNIF(string pNIF)
+        public static void RemoveEmpleat(Empleat entrada)
         {
-            if (pNIF.Length != 9)
+            if (_empleats.Contains(entrada))
             {
-                return "00000000A";
-            }
-            else
-            {
-                if (pNIF[pNIF.Length - 1]>=65 && pNIF[pNIF.Length - 1] <= 90)
-                {
-                    return pNIF;
-                }
-                else
-                {
-                    return "00000000A";
-                } 
-
+                _empleats.Remove(entrada);
                 
             }
         }
+
+        public static bool comprovarNIF(string pNIF)
+        {
+            if (pNIF == null)
+            {
+                return false;
+            }
+            else {
+                //Comprobamos si el DNI tiene 9 digitos
+                if (pNIF.Length != 9)
+                {
+                    //No es un DNI Valido
+                    return false;
+                }
+
+                //Extraemos los números y la letra
+                string dniNumbers = pNIF.Substring(0, pNIF.Length - 1);
+                string dniLeter = pNIF.Substring(pNIF.Length - 1, 1);
+                //Intentamos convertir los números del DNI a integer
+                var numbersValid = int.TryParse(dniNumbers, out int dniInteger);
+                if (!numbersValid)
+                {
+                    //No se pudo convertir los números a formato númerico
+                    return false;
+                }
+                if (CalculateDNILeter(dniInteger) != dniLeter)
+                {
+                    //La letra del DNI es incorrecta
+                    return false;
+                }
+                //DNI Valido 🙂
+                return true;
+
+            }
+        }
+
+
+        static string CalculateDNILeter(int dniNumbers)
+        {
+            //Cargamos los digitos de control
+            string[] control = { "T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E" };
+            var mod = dniNumbers % 23;
+            return control[mod];
+        }
+
+
+
 
         private Empresa mEmpresaActual;
 
@@ -122,7 +192,9 @@ namespace GestorPersones
         public String Nom
         {
             get { return mNom; }
-            set { mNom = value; }
+            set { if (!comprovarNom(value)) throw new Exception("El nom no compleix amb els requeriments");
+                mNom = value;
+            }
         }
 
         private String mCognoms;
@@ -130,7 +202,10 @@ namespace GestorPersones
         public String Cognoms
         {
             get { return mCognoms; }
-            set { mCognoms = value; }
+            set {
+                if (!comprovarCognom(value)) throw new Exception("El cognom no compleix amb els requeriments");
+                mCognoms = value;
+            }
         }
 
         private String mNIF;
@@ -138,7 +213,10 @@ namespace GestorPersones
         public String NIF
         {
             get { return mNIF; }
-            set { mNIF = value; }
+            set {
+                if (!comprovarNIF(value)) throw new Exception("El NIF no compleix amb els requeriments");
+                mNIF = value;
+            }
         }
 
         private List<Projecte> mProjectesOnTreballo;
@@ -187,7 +265,10 @@ namespace GestorPersones
         public DateTime DataIncorporacio
         {
             get { return mDataIncorporacio; }
-            set { mDataIncorporacio = value; }
+            set {
+                if (!comporvarData(value)) throw new Exception("La Data no compleix amb els requeriments");
+                mDataIncorporacio=value;
+            }
         }
 
         public Empresa EmpresaActual

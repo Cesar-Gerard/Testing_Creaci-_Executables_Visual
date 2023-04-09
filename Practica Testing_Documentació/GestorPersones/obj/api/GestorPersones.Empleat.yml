@@ -6,6 +6,7 @@ items:
   parent: GestorPersones
   children:
   - GestorPersones.Empleat.#ctor(GestorPersones.Empresa,System.String,System.String,System.String,System.DateTime)
+  - GestorPersones.Empleat._empleats
   - GestorPersones.Empleat.AddProjecte(GestorPersones.Projecte)
   - GestorPersones.Empleat.Cognoms
   - GestorPersones.Empleat.comporvarData(System.DateTime)
@@ -21,6 +22,7 @@ items:
   - GestorPersones.Empleat.Nom
   - GestorPersones.Empleat.ProjectesOnNoTreballo
   - GestorPersones.Empleat.ProjectesOnTreballo
+  - GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
   - GestorPersones.Empleat.RemoveProjecte(GestorPersones.Projecte)
   langs:
   - csharp
@@ -58,6 +60,39 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: GestorPersones.Empleat._empleats
+  commentId: F:GestorPersones.Empleat._empleats
+  id: _empleats
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: _empleats
+  nameWithType: Empleat._empleats
+  fullName: GestorPersones.Empleat._empleats
+  type: Field
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: _empleats
+    path: Empleat.cs
+    startLine: 10
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static ObservableCollection<Empleat> _empleats
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{GestorPersones.Empleat}
+    content.vb: Public Shared _empleats As ObservableCollection(Of Empleat)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: GestorPersones.Empleat.GetEmpleats
   commentId: M:GestorPersones.Empleat.GetEmpleats
   id: GetEmpleats
@@ -81,10 +116,10 @@ items:
   - GestorPersones
   namespace: GestorPersones
   syntax:
-    content: public static List<Empleat> GetEmpleats()
+    content: public static ObservableCollection<Empleat> GetEmpleats()
     return:
-      type: System.Collections.Generic.List{GestorPersones.Empleat}
-    content.vb: Public Shared Function GetEmpleats As List(Of Empleat)
+      type: System.Collections.ObjectModel.ObservableCollection{GestorPersones.Empleat}
+    content.vb: Public Shared Function GetEmpleats As ObservableCollection(Of Empleat)
   overload: GestorPersones.Empleat.GetEmpleats*
   modifiers.csharp:
   - public
@@ -151,18 +186,18 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: comprovarCognom
     path: Empleat.cs
-    startLine: 48
+    startLine: 57
   assemblies:
   - GestorPersones
   namespace: GestorPersones
   syntax:
-    content: public static string comprovarCognom(string pCognoms)
+    content: public static bool comprovarCognom(string pCognoms)
     parameters:
     - id: pCognoms
       type: System.String
     return:
-      type: System.String
-    content.vb: Public Shared Function comprovarCognom(pCognoms As String) As String
+      type: System.Boolean
+    content.vb: Public Shared Function comprovarCognom(pCognoms As String) As Boolean
   overload: GestorPersones.Empleat.comprovarCognom*
   modifiers.csharp:
   - public
@@ -188,18 +223,18 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: comprovarNom
     path: Empleat.cs
-    startLine: 63
+    startLine: 81
   assemblies:
   - GestorPersones
   namespace: GestorPersones
   syntax:
-    content: public static string comprovarNom(string pNom)
+    content: public static bool comprovarNom(string pNom)
     parameters:
     - id: pNom
       type: System.String
     return:
-      type: System.String
-    content.vb: Public Shared Function comprovarNom(pNom As String) As String
+      type: System.Boolean
+    content.vb: Public Shared Function comprovarNom(pNom As String) As Boolean
   overload: GestorPersones.Empleat.comprovarNom*
   modifiers.csharp:
   - public
@@ -225,19 +260,54 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: comporvarData
     path: Empleat.cs
-    startLine: 80
+    startLine: 107
   assemblies:
   - GestorPersones
   namespace: GestorPersones
   syntax:
-    content: public static DateTime comporvarData(DateTime pDataIncorporacio)
+    content: public static bool comporvarData(DateTime pDataIncorporacio)
     parameters:
     - id: pDataIncorporacio
       type: System.DateTime
     return:
-      type: System.DateTime
-    content.vb: Public Shared Function comporvarData(pDataIncorporacio As Date) As Date
+      type: System.Boolean
+    content.vb: Public Shared Function comporvarData(pDataIncorporacio As Date) As Boolean
   overload: GestorPersones.Empleat.comporvarData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
+  commentId: M:GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
+  id: RemoveEmpleat(GestorPersones.Empleat)
+  parent: GestorPersones.Empleat
+  langs:
+  - csharp
+  - vb
+  name: RemoveEmpleat(Empleat)
+  nameWithType: Empleat.RemoveEmpleat(Empleat)
+  fullName: GestorPersones.Empleat.RemoveEmpleat(GestorPersones.Empleat)
+  type: Method
+  source:
+    remote:
+      path: Practica Testing_Documentació/GestorPersones/Empleat.cs
+      branch: main
+      repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
+    id: RemoveEmpleat
+    path: Empleat.cs
+    startLine: 130
+  assemblies:
+  - GestorPersones
+  namespace: GestorPersones
+  syntax:
+    content: public static void RemoveEmpleat(Empleat entrada)
+    parameters:
+    - id: entrada
+      type: GestorPersones.Empleat
+    content.vb: Public Shared Sub RemoveEmpleat(entrada As Empleat)
+  overload: GestorPersones.Empleat.RemoveEmpleat*
   modifiers.csharp:
   - public
   - static
@@ -262,18 +332,18 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: comprovarNIF
     path: Empleat.cs
-    startLine: 95
+    startLine: 139
   assemblies:
   - GestorPersones
   namespace: GestorPersones
   syntax:
-    content: public static string comprovarNIF(string pNIF)
+    content: public static bool comprovarNIF(string pNIF)
     parameters:
     - id: pNIF
       type: System.String
     return:
-      type: System.String
-    content.vb: Public Shared Function comprovarNIF(pNIF As String) As String
+      type: System.Boolean
+    content.vb: Public Shared Function comprovarNIF(pNIF As String) As Boolean
   overload: GestorPersones.Empleat.comprovarNIF*
   modifiers.csharp:
   - public
@@ -299,7 +369,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: Nom
     path: Empleat.cs
-    startLine: 121
+    startLine: 191
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -334,7 +404,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: Cognoms
     path: Empleat.cs
-    startLine: 129
+    startLine: 201
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -369,7 +439,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: NIF
     path: Empleat.cs
-    startLine: 137
+    startLine: 212
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -404,7 +474,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: ProjectesOnTreballo
     path: Empleat.cs
-    startLine: 145
+    startLine: 223
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -439,7 +509,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: ProjectesOnNoTreballo
     path: Empleat.cs
-    startLine: 150
+    startLine: 228
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -474,7 +544,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: GetProjectes
     path: Empleat.cs
-    startLine: 162
+    startLine: 240
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -506,7 +576,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: AddProjecte
     path: Empleat.cs
-    startLine: 167
+    startLine: 245
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -539,7 +609,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: RemoveProjecte
     path: Empleat.cs
-    startLine: 175
+    startLine: 253
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -572,7 +642,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: DataIncorporacio
     path: Empleat.cs
-    startLine: 186
+    startLine: 264
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -607,7 +677,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: EmpresaActual
     path: Empleat.cs
-    startLine: 192
+    startLine: 273
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -642,7 +712,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: Equals
     path: Empleat.cs
-    startLine: 198
+    startLine: 279
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -919,98 +989,98 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Collections.ObjectModel.ObservableCollection{GestorPersones.Empleat}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{GestorPersones.Empleat}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  name: ObservableCollection<Empleat>
+  nameWithType: ObservableCollection<Empleat>
+  fullName: System.Collections.ObjectModel.ObservableCollection<GestorPersones.Empleat>
+  nameWithType.vb: ObservableCollection(Of Empleat)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of GestorPersones.Empleat)
+  name.vb: ObservableCollection(Of Empleat)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GestorPersones.Empleat
+    name: Empleat
+    nameWithType: Empleat
+    fullName: GestorPersones.Empleat
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GestorPersones.Empleat
+    name: Empleat
+    nameWithType: Empleat
+    fullName: GestorPersones.Empleat
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
 - uid: GestorPersones.Empleat.GetEmpleats*
   commentId: Overload:GestorPersones.Empleat.GetEmpleats
   name: GetEmpleats
   nameWithType: Empleat.GetEmpleats
   fullName: GestorPersones.Empleat.GetEmpleats
-- uid: System.Collections.Generic.List{GestorPersones.Empleat}
-  commentId: T:System.Collections.Generic.List{GestorPersones.Empleat}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  name: List<Empleat>
-  nameWithType: List<Empleat>
-  fullName: System.Collections.Generic.List<GestorPersones.Empleat>
-  nameWithType.vb: List(Of Empleat)
-  fullName.vb: System.Collections.Generic.List(Of GestorPersones.Empleat)
-  name.vb: List(Of Empleat)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: GestorPersones.Empleat
-    name: Empleat
-    nameWithType: Empleat
-    fullName: GestorPersones.Empleat
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: GestorPersones.Empleat
-    name: Empleat
-    nameWithType: Empleat
-    fullName: GestorPersones.Empleat
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: GestorPersones.Empleat.#ctor*
   commentId: Overload:GestorPersones.Empleat.#ctor
   name: Empleat
@@ -1041,6 +1111,13 @@ references:
   name: comprovarCognom
   nameWithType: Empleat.comprovarCognom
   fullName: GestorPersones.Empleat.comprovarCognom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: GestorPersones.Empleat.comprovarNom*
   commentId: Overload:GestorPersones.Empleat.comprovarNom
   name: comprovarNom
@@ -1051,6 +1128,17 @@ references:
   name: comporvarData
   nameWithType: Empleat.comporvarData
   fullName: GestorPersones.Empleat.comporvarData
+- uid: GestorPersones.Empleat.RemoveEmpleat*
+  commentId: Overload:GestorPersones.Empleat.RemoveEmpleat
+  name: RemoveEmpleat
+  nameWithType: Empleat.RemoveEmpleat
+  fullName: GestorPersones.Empleat.RemoveEmpleat
+- uid: GestorPersones.Empleat
+  commentId: T:GestorPersones.Empleat
+  parent: GestorPersones
+  name: Empleat
+  nameWithType: Empleat
+  fullName: GestorPersones.Empleat
 - uid: GestorPersones.Empleat.comprovarNIF*
   commentId: Overload:GestorPersones.Empleat.comprovarNIF
   name: comprovarNIF
@@ -1118,6 +1206,51 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: GestorPersones.Empleat.ProjectesOnNoTreballo*
   commentId: Overload:GestorPersones.Empleat.ProjectesOnNoTreballo
   name: ProjectesOnNoTreballo
@@ -1267,10 +1400,3 @@ references:
   name: Equals
   nameWithType: Empleat.Equals
   fullName: GestorPersones.Empleat.Equals
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean

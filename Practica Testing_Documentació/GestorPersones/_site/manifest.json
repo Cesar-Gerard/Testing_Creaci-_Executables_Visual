@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/DAM/DAM2/Interficies/Practica Testing_Documentacio/Practica Testing_Documentació/GestorPersones",
+  "source_base_path": "E:/DAM/DAM2/Interficies/Practica Testing_Documentacio/Practica Testing_Documentació/GestorPersones",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -104,7 +104,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GestorPersones.Empleat.html",
-          "hash": "5BKIohf4cDznQpaveiFSVcmcgeDEmZRlBRgmAeGlRhI="
+          "hash": "29pbBOZPgN4PhIAwb26ult24vhFMeBIdObP0r16s9aU="
         }
       },
       "is_incremental": true,
@@ -128,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GestorPersones.MainWindow.html",
-          "hash": "5fv6OG58YdvRGfA7HwpsSlRNvdCzGFB5OGQfEFqXwLo="
+          "hash": "Yonhld+5lDiUfQTkjMwLEV1oxa1ZT+DIeQ5K4TeL31w="
         }
       },
       "is_incremental": true,
@@ -140,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GestorPersones.Projecte.html",
-          "hash": "l0FFNETqxnZo9G95GJ2uDTXEt+mpfDdRvfoYt6FQ6Vk="
+          "hash": "BU5h1tktY74FcnYItC6qzEGL4mLIqqDdcxVFozRoevA="
         }
       },
       "is_incremental": true,

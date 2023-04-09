@@ -53,7 +53,6 @@ items:
   - System.Windows.Markup.IAddChild
   inheritedMembers:
   - System.Windows.Window.TaskbarItemInfoProperty
-  - System.Windows.Window.DpiChangedEvent
   - System.Windows.Window.AllowsTransparencyProperty
   - System.Windows.Window.TitleProperty
   - System.Windows.Window.IconProperty
@@ -75,7 +74,6 @@ items:
   - System.Windows.Window.Activate
   - System.Windows.Window.GetWindow(System.Windows.DependencyObject)
   - System.Windows.Window.OnCreateAutomationPeer
-  - System.Windows.Window.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)
   - System.Windows.Window.OnVisualParentChanged(System.Windows.DependencyObject)
   - System.Windows.Window.MeasureOverride(System.Windows.Size)
   - System.Windows.Window.ArrangeOverride(System.Windows.Size)
@@ -88,7 +86,6 @@ items:
   - System.Windows.Window.OnClosing(System.ComponentModel.CancelEventArgs)
   - System.Windows.Window.OnClosed(System.EventArgs)
   - System.Windows.Window.OnContentRendered(System.EventArgs)
-  - System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
   - System.Windows.Window.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)
   - System.Windows.Window.LogicalChildren
   - System.Windows.Window.TaskbarItemInfo
@@ -111,7 +108,6 @@ items:
   - System.Windows.Window.Topmost
   - System.Windows.Window.ShowActivated
   - System.Windows.Window.SourceInitialized
-  - System.Windows.Window.DpiChanged
   - System.Windows.Window.Activated
   - System.Windows.Window.Deactivated
   - System.Windows.Window.StateChanged
@@ -686,6 +682,7 @@ items:
   - System.Windows.UIElement.ManipulationCompleted
   - System.Windows.Media.Visual.AddVisualChild(System.Windows.Media.Visual)
   - System.Windows.Media.Visual.RemoveVisualChild(System.Windows.Media.Visual)
+  - System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
   - System.Windows.Media.Visual.IsAncestorOf(System.Windows.DependencyObject)
   - System.Windows.Media.Visual.IsDescendantOf(System.Windows.DependencyObject)
   - System.Windows.Media.Visual.FindCommonVisualAncestor(System.Windows.DependencyObject)
@@ -757,7 +754,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: .ctor
     path: MainWindow.xaml.cs
-    startLine: 22
+    startLine: 30
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -787,7 +784,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: EmpleatSeleccionat
     path: MainWindow.xaml.cs
-    startLine: 35
+    startLine: 43
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -822,7 +819,7 @@ items:
       repo: https://github.com/Cesar-Gerard/Testing_Creaci-_Executables_Visual.git
     id: EmpleatSeleccionatProperty
     path: MainWindow.xaml.cs
-    startLine: 42
+    startLine: 50
   assemblies:
   - GestorPersones
   namespace: GestorPersones
@@ -957,13 +954,6 @@ references:
   name: TaskbarItemInfoProperty
   nameWithType: Window.TaskbarItemInfoProperty
   fullName: System.Windows.Window.TaskbarItemInfoProperty
-- uid: System.Windows.Window.DpiChangedEvent
-  commentId: F:System.Windows.Window.DpiChangedEvent
-  parent: System.Windows.Window
-  isExternal: true
-  name: DpiChangedEvent
-  nameWithType: Window.DpiChangedEvent
-  fullName: System.Windows.Window.DpiChangedEvent
 - uid: System.Windows.Window.AllowsTransparencyProperty
   commentId: F:System.Windows.Window.AllowsTransparencyProperty
   parent: System.Windows.Window
@@ -1310,63 +1300,6 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Windows.Window.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)
-  commentId: M:System.Windows.Window.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)
-  parent: System.Windows.Window
-  isExternal: true
-  name: OnDpiChanged(DpiScale, DpiScale)
-  nameWithType: Window.OnDpiChanged(DpiScale, DpiScale)
-  fullName: System.Windows.Window.OnDpiChanged(System.Windows.DpiScale, System.Windows.DpiScale)
-  spec.csharp:
-  - uid: System.Windows.Window.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)
-    name: OnDpiChanged
-    nameWithType: Window.OnDpiChanged
-    fullName: System.Windows.Window.OnDpiChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Windows.DpiScale
-    name: DpiScale
-    nameWithType: DpiScale
-    fullName: System.Windows.DpiScale
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Windows.DpiScale
-    name: DpiScale
-    nameWithType: DpiScale
-    fullName: System.Windows.DpiScale
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Windows.Window.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)
-    name: OnDpiChanged
-    nameWithType: Window.OnDpiChanged
-    fullName: System.Windows.Window.OnDpiChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Windows.DpiScale
-    name: DpiScale
-    nameWithType: DpiScale
-    fullName: System.Windows.DpiScale
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Windows.DpiScale
-    name: DpiScale
-    nameWithType: DpiScale
-    fullName: System.Windows.DpiScale
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
@@ -1878,63 +1811,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
-  commentId: M:System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
-  parent: System.Windows.Window
-  isExternal: true
-  name: OnVisualChildrenChanged(DependencyObject, DependencyObject)
-  nameWithType: Window.OnVisualChildrenChanged(DependencyObject, DependencyObject)
-  fullName: System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject, System.Windows.DependencyObject)
-  spec.csharp:
-  - uid: System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
-    name: OnVisualChildrenChanged
-    nameWithType: Window.OnVisualChildrenChanged
-    fullName: System.Windows.Window.OnVisualChildrenChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Windows.DependencyObject
-    name: DependencyObject
-    nameWithType: DependencyObject
-    fullName: System.Windows.DependencyObject
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Windows.DependencyObject
-    name: DependencyObject
-    nameWithType: DependencyObject
-    fullName: System.Windows.DependencyObject
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Windows.Window.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
-    name: OnVisualChildrenChanged
-    nameWithType: Window.OnVisualChildrenChanged
-    fullName: System.Windows.Window.OnVisualChildrenChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Windows.DependencyObject
-    name: DependencyObject
-    nameWithType: DependencyObject
-    fullName: System.Windows.DependencyObject
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Windows.DependencyObject
-    name: DependencyObject
-    nameWithType: DependencyObject
-    fullName: System.Windows.DependencyObject
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Windows.Window.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)
   commentId: M:System.Windows.Window.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)
   parent: System.Windows.Window
@@ -2123,13 +1999,6 @@ references:
   name: SourceInitialized
   nameWithType: Window.SourceInitialized
   fullName: System.Windows.Window.SourceInitialized
-- uid: System.Windows.Window.DpiChanged
-  commentId: E:System.Windows.Window.DpiChanged
-  parent: System.Windows.Window
-  isExternal: true
-  name: DpiChanged
-  nameWithType: Window.DpiChanged
-  fullName: System.Windows.Window.DpiChanged
 - uid: System.Windows.Window.Activated
   commentId: E:System.Windows.Window.Activated
   parent: System.Windows.Window
@@ -12320,6 +12189,63 @@ references:
     name: Visual
     nameWithType: Visual
     fullName: System.Windows.Media.Visual
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
+  commentId: M:System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
+  parent: System.Windows.Media.Visual
+  isExternal: true
+  name: OnVisualChildrenChanged(DependencyObject, DependencyObject)
+  nameWithType: Visual.OnVisualChildrenChanged(DependencyObject, DependencyObject)
+  fullName: System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject, System.Windows.DependencyObject)
+  spec.csharp:
+  - uid: System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
+    name: OnVisualChildrenChanged
+    nameWithType: Visual.OnVisualChildrenChanged
+    fullName: System.Windows.Media.Visual.OnVisualChildrenChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    nameWithType: DependencyObject
+    fullName: System.Windows.DependencyObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    nameWithType: DependencyObject
+    fullName: System.Windows.DependencyObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
+    name: OnVisualChildrenChanged
+    nameWithType: Visual.OnVisualChildrenChanged
+    fullName: System.Windows.Media.Visual.OnVisualChildrenChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    nameWithType: DependencyObject
+    fullName: System.Windows.DependencyObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    nameWithType: DependencyObject
+    fullName: System.Windows.DependencyObject
     isExternal: true
   - name: )
     nameWithType: )
